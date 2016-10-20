@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/relateiq/siqstory-collector/issues"
   },
-  "homepage": "https://github.com/relateiq/siqstory-collector#readme"
+  "homepage": "https://github.com/relateiq/siqstory-collector#readme",
+  "dependencies": {
+    "pg": "~6.1.0",
+    "pg-hstore": "~2.3.2",
+    "sequelize": "~3.24.4"
+  }
 }

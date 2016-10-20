@@ -16,6 +16,7 @@ service: siqstory-collector
 provider:
   name: aws
   runtime: nodejs4.3
+  region: us-east-1
 
 # you can overwrite defaults here
 #  stage: dev
@@ -45,6 +46,8 @@ provider:
 functions:
   hello:
     handler: handler.hello
+    events:
+      - http: GET siqstory
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
