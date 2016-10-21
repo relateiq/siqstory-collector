@@ -46,11 +46,29 @@ provider:
 functions:
   hello:
     handler: handler.hello
+    timeout : 15
     events:
-      - http: GET siqstory
-    vpc:
-      securityGroupIds : ["sg-3e554b44"]
-      subnetIds : ["subnet-d441948f", "subnet-efd607c2", "subnet-4ec50172", "subnet-efc040a6"]
+      - http:
+          path: hello
+          method: get
+          cors: true
+  getLastStory:
+    handler: handler.getLastStory
+    timeout : 15
+    events:
+      - http:
+          path: lastStory
+          method: get
+          cors: true
+  saveStory:
+    handler: handler.saveStory
+    timeout : 15
+    events:
+      - http:
+          path: story
+          method: post
+          cors: true
+
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
