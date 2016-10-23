@@ -17,9 +17,14 @@
   },
   "homepage": "https://github.com/relateiq/siqstory-collector#readme",
   "dependencies": {
+    "bluebird": "~3.4.6",
+    "js-md5": "~0.4.1",
     "pg": "~6.1.0",
     "pg-hstore": "~2.3.2",
     "request": "~2.75.0",
     "sequelize": "~3.24.4"
+  },
+  "devDependencies": {
+    "aws-sdk": "~2.6.11"
   }
 }
