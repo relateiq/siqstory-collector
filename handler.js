@@ -2,7 +2,9 @@
 
 var Sequelize = require('sequelize');
 var request = require('request');
-var sequelize = new Sequelize("postgres://scamden:E6Cb.M4QBWW*LT@siqstorydb-2.cuwyz56hhvzk.us-east-1.rds.amazonaws.com:5432/siqstorydb");
+// NOTE: dbconfig is not checked in so you would need to provide
+//  your own database link here by creating that file
+var sequelize = new Sequelize(require('./.dbconfig').dbLink);
 var aws = require('aws-sdk');
 var Promise = require('bluebird');
 var md5 = require('js-md5');
