@@ -22,7 +22,7 @@
     "pg": "~6.1.0",
     "pg-hstore": "~2.3.2",
     "request": "~2.75.0",
-    "sequelize": "~3.24.4"
+    "sequelize": "~6.3.4"
   },
   "devDependencies": {
     "aws-sdk": "~2.6.11"
